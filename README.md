@@ -55,3 +55,22 @@ docker-compose up --build
 🎯 Vision
 
 Smart Companion is built to reduce overwhelm and support neuro-friendly productivity by transforming complex tasks into clear, actionable steps.
+## 📸 Screenshots
+
+### 🏠 Home
+![Home](screenshots/HOME.jpeg)
+
+### 🌱 Onboarding
+![Onboarding](screenshots/ONBOARDING.jpeg)
+
+### 🎮 Games Section
+![Games](screenshots/GAMES SECTION.jpeg)
+
+### 🧠 Accessibility
+![Accessibility](screenshots/ACCESSIBILITY.jpeg)
+
+### 👤 Edit Profile
+![Edit Profile](screenshots/EDIT PROFILE SECTION.jpeg)
+
+### 🔁 Left Right Flow Game
+![LeftRightFlow](screenshots/LEFTRIGHTFLOW GAME.jpeg)
