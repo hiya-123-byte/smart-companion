@@ -14,15 +14,22 @@ export default function Games() {
     <div
       onClick={() => setActiveGame(value)}
       style={{
-        padding: "18px",
+        padding: "20px",
         borderRadius: "18px",
         background: color,
-        marginBottom: "18px",
+        marginBottom: "20px",
         cursor: "pointer",
         fontWeight: 600,
         fontSize: "16px",
-        boxShadow: "0 8px 20px rgba(0,0,0,0.06)",
-        transition: "0.3s",
+        backdropFilter: "blur(8px)",
+        boxShadow: "0 10px 25px rgba(0,0,0,0.15)",
+        transition: "all 0.3s ease",
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.transform = "scale(1.05)";
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.transform = "scale(1)";
       }}
     >
       {title}
@@ -33,10 +40,11 @@ export default function Games() {
     <div
       style={{
         minHeight: "100vh",
-        background: "linear-gradient(180deg, #ffffff, #f4f8fb)",
-        padding: "50px 20px",
+        background: "linear-gradient(135deg, #0f3d47, #2f5f69)",
+        padding: "60px 20px",
         position: "relative",
         fontFamily: "system-ui",
+        color: "white",
       }}
     >
       {/* CLOSE BUTTON */}
@@ -54,9 +62,20 @@ export default function Games() {
         ✕
       </div>
 
-      <div style={{ maxWidth: 500, margin: "0 auto", textAlign: "center" }}>
+      <div
+        style={{
+          maxWidth: 500,
+          margin: "0 auto",
+          textAlign: "center",
+          background: "rgba(255,255,255,0.08)",
+          padding: "40px",
+          borderRadius: "25px",
+          backdropFilter: "blur(12px)",
+          boxShadow: "0 20px 40px rgba(0,0,0,0.25)",
+        }}
+      >
         <h1 style={{ marginBottom: 8 }}>Mini Games 🎮</h1>
-        <p style={{ color: "#666", marginBottom: 40 }}>
+        <p style={{ color: "#ddd", marginBottom: 40 }}>
           Choose one activity to focus on
         </p>
 
@@ -65,22 +84,22 @@ export default function Games() {
             <GameButton
               title="🫁 Breathing Circle"
               value="breathing"
-              color="#E3F2FD"
+              color="rgba(255,255,255,0.2)"
             />
             <GameButton
               title="↔️ Left-Right Flow"
               value="flow"
-              color="#E8F5E9"
+              color="rgba(255,255,255,0.15)"
             />
             <GameButton
               title="🔤 Letter Path"
               value="letter"
-              color="#FFF3E0"
+              color="rgba(255,255,255,0.2)"
             />
             <GameButton
               title="🔵 Visual Dot Focus"
               value="dot"
-              color="#F3E5F5"
+              color="rgba(255,255,255,0.15)"
             />
           </>
         )}
@@ -95,12 +114,15 @@ export default function Games() {
             onClick={() => setActiveGame(null)}
             style={{
               marginTop: 40,
-              padding: "10px 18px",
-              borderRadius: 12,
+              padding: "12px 22px",
+              borderRadius: 14,
               border: "none",
-              background: "#1976D2",
+              background: "#4CAF50",
               color: "white",
               cursor: "pointer",
+              fontWeight: 600,
+              fontSize: "14px",
+              boxShadow: "0 6px 15px rgba(0,0,0,0.3)",
             }}
           >
             Back to Games
