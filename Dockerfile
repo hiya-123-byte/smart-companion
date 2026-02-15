@@ -7,33 +7,26 @@ RUN npm install
 COPY ui .
 RUN npm run build
 
-# ---------- BACKEND + RUNTIME ----------
-FROM node:18
+# ---------- BACKEND RUNTIME ----------
+FROM python:3.10-slim
 
-# install python
-RUN apt-get update && apt-get install -y python3 python3-pip
-
-WORKDIR /app
-
-# backend deps
-RUN apt-get update && apt-get install -y python3 python3-pip
+# install node for serving frontend
+RUN apt-get update && apt-get install -y nodejs npm
 
 WORKDIR /app
 
+# install python deps
 COPY backend/requirements.txt .
-RUN python3 -m pip install --upgrade pip
-RUN python3 -m pip install --no-cache-dir -r requirements.txt
-
-COPY backend ./backend
+RUN pip install --no-cache-dir -r requirements.txt
 
 # copy backend
 COPY backend ./backend
 
-# copy frontend build
+# copy frontend
 COPY --from=frontend /app/ui ./ui
 
 ENV PORT=8000
 
 WORKDIR /app/backend
 
-CMD sh -c "cd /app/ui && npm run start & python3 app.py"
+CMD sh -c "cd /app/ui && npm run start & uvicorn app:app --host 0.0.0.0 --port 8000"
