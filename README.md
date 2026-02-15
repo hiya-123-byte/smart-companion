@@ -50,8 +50,8 @@ npm run dev
 Frontend runs on:
 http://localhost:3000
 
-🐳 Docker (Optional)
-docker-compose up --build
+The Smart Companion platform is fully containerized using Docker, enabling seamless orchestration of both frontend (Next.js) and backend (FastAPI) services. The system leverages Docker Compose to manage a multi-service architecture, ensuring environment consistency and scalable deployment. This production-ready setup guarantees portability, reproducibility, and efficient service isolation across development and deployment environments.
+
 🎯 Vision
 
 Smart Companion is built to reduce overwhelm and support neuro-friendly productivity by transforming complex tasks into clear, actionable steps.
