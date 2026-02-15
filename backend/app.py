@@ -255,6 +255,8 @@ def task_history(email: str, limit: int = 5):
 @app.get("/")
 def health():
     return {"status": "backend running"}
-    if __name__ == "__main__":
+
+
+if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8000))
     uvicorn.run(app, host="0.0.0.0", port=port)
