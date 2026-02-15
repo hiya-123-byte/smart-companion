@@ -59,20 +59,3 @@ Smart Companion is built to reduce overwhelm and support neuro-friendly producti
 
 ## 📸 Screenshots
 
-### 🏠 Home
-![Home](screenshots/home.jpeg)
-
-### 🌱 Onboarding
-![Onboarding](screenshots/onboarding.jpeg)
-
-### 🎮 Games Section
-![Games](screenshots/games.jpeg)
-
-### 🧠 Accessibility
-![Accessibility](screenshots/accessibility.jpeg)
-
-### 👤 Edit Profile
-![Edit Profile](screenshots/edit-profile.jpeg)
-
-### 🔁 Left Right Flow Game
-![LeftRightFlow](screenshots/leftrightflow.jpeg)
