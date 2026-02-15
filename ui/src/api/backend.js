@@ -1,4 +1,4 @@
-const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
+const BASE_URL = "https://smart-companion-production.up.railway.app";
 
 // ==============================
 // REGISTER USER
