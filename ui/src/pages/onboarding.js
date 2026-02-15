@@ -26,12 +26,12 @@ export default function Onboarding() {
 
     try {
       await registerUser({
-        email,
-        username,
-        avatar,
-        small_steps: smallSteps,
-        simple_language: simpleLanguage,
-      });
+  email,
+  username,
+  avatar,
+  needs_more_steps: smallSteps,
+  simple_language: simpleLanguage,
+});
     } catch (error) {
       if (!error.message.includes("already")) {
         alert(error.message);
