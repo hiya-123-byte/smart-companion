@@ -57,5 +57,28 @@ docker-compose up --build
 Smart Companion is built to reduce overwhelm and support neuro-friendly productivity by transforming complex tasks into clear, actionable steps.
 
 
-## 📸 Screenshots
+## 📸 Application Screenshots
+
+### 🚀 Launch / Onboarding
+![Launch Screen](screenshots/launch.jpeg)
+
+---
+
+### 🏠 Home Page
+![Home Page](screenshots/home%20pg.jpeg)
+
+---
+
+### 🎮 Games Section
+![Games Corner](screenshots/games%20corner.jpeg)
+
+---
+
+### ⏳ Expired Tasks
+![Expired Tasks](screenshots/expiredtasks.jpeg)
+
+---
+
+### 🏆 Micro Win Celebration
+![Micro Win](screenshots/micro%20win.jpeg)
 
