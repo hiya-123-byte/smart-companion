@@ -16,8 +16,15 @@ RUN apt-get update && apt-get install -y python3 python3-pip
 WORKDIR /app
 
 # backend deps
+RUN apt-get update && apt-get install -y python3 python3-pip
+
+WORKDIR /app
+
 COPY backend/requirements.txt .
-RUN pip3 install --no-cache-dir -r requirements.txt
+RUN python3 -m pip install --upgrade pip
+RUN python3 -m pip install --no-cache-dir -r requirements.txt
+
+COPY backend ./backend
 
 # copy backend
 COPY backend ./backend
