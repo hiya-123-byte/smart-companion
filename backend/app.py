@@ -19,7 +19,7 @@ from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI(title="Smart Companion Backend")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # frontend
+    allow_origins=["*"],   # allow all origins for now
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
